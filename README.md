@@ -153,10 +153,6 @@ XGBoost · LightGBM · CatBoost · Stacking
 
 <br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Ikram-Saidane&bg_color=0D1117&color=2DD4BF&line=7C3AED&point_color=FFFFFF&area=true&hide_border=true" width="100%" alt="Activity graph" />
-
-<br/>
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ikram-Saidane/Ikram-Saidane/output/github-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ikram-Saidane/Ikram-Saidane/output/github-snake.svg" />
