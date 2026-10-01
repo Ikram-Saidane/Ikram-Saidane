@@ -1,55 +1,181 @@
-# 👋 Salut, je suis Ikram Saidane
+<div align="center">
 
-**Étudiante en M2 IA, Data Science & Agentic AI** à l'Université Paris Dauphine, passionnée par l'IA générative, les systèmes RAG et multi-agents, et leur mise en production.
+<img src="https://capsule-render.vercel.app/api?type=venom&color=0:0F172A,50:1E3A5F,100:2DD4BF&height=260&section=header&text=Ikram%20Saidane&fontSize=62&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=GenAI%20%C2%B7%20Agentic%20AI%20%C2%B7%20Machine%20Learning&descSize=20&descAlignY=62" width="100%" alt="header" />
 
-🎯 **Je recherche un stage PFE de 6 mois en France (à partir de février 2027)** en AI Engineering, GenAI, Machine Learning ou Data Science.
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&duration=3000&pause=900&color=2DD4BF&center=true&vCenter=true&width=760&height=55&lines=Hi+there!+I'm+Ikram+%F0%9F%91%8B;I+build+RAG+%26+multi-agent+systems+%F0%9F%A4%96;I+ship+ML+models+to+production+%F0%9F%9A%80;M2+AI+%40+Universit%C3%A9+Paris+Dauphine+%F0%9F%8E%93;Looking+for+a+6-month+PFE+internship+in+France+%F0%9F%87%AB%F0%9F%87%B7" alt="Typing animation" />
 
-## 🚀 En ce moment
+<br/><br/>
 
-- 🔭 Je construis **Agora**, un système multi-agents de veille réglementaire européenne (LangGraph, RAG)
-- 🌱 J'approfondis l'évaluation des systèmes RAG et les architectures agentiques
-- 🤝 Je co-organise le hackathon **DauphineXey** avec l'association DataIn
+![Profile views](https://komarev.com/ghpvc/?username=Ikram-Saidane&label=Profile%20views&color=2DD4BF&style=for-the-badge)
+![Followers](https://img.shields.io/github/followers/Ikram-Saidane?style=for-the-badge&logo=github&color=7C3AED&label=Followers)
+![Status](https://img.shields.io/badge/Open%20to-PFE%20Internship%20Feb%202027-2DD4BF?style=for-the-badge)
 
-## 🛠️ Compétences
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ikram-saidane)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ikram.saidane@dauphine.eu)
 
-**GenAI & Agentic AI**
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white) ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat) ![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=flat&logo=huggingface&logoColor=black) ![Qdrant](https://img.shields.io/badge/Qdrant-DC244C?style=flat) ![Groq](https://img.shields.io/badge/Groq-F55036?style=flat)
-
-LLaMA 3.x · RAG · embeddings (bge-m3, MiniLM) · systèmes multi-agents · évaluation RAGAS
-
-**Machine Learning**
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white) ![XGBoost](https://img.shields.io/badge/XGBoost-337AB7?style=flat) ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
-
-LightGBM · CatBoost · stacking · feature engineering · Deep Learning (MLP, LSTM) · NLP · SHAP/LIME
-
-**MLOps & outils**
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat&logo=githubactions&logoColor=white) ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white) ![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat&logo=googlecloud&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
-
-## 📂 Projets à la une
-
-| Projet | Description | Résultats |
-|--------|-------------|-----------|
-| **[Agora](https://github.com/Ikram-Saidane/agora)** | Système multi-agents de veille réglementaire UE sur le corpus EUR-Lex (AI Act, RGPD, DSA, DMA). Agents Query, Retrieval, Analysis et Citation. LangGraph, bge-m3, Qdrant, LLaMA 3.3-70B (Groq) | Context recall 0.93, faithfulness 0.75 (RAGAS) |
-| **[Churn Prediction API](https://github.com/Ikram-Saidane/churn-prediction-api)** | Pipeline MLOps de bout en bout : modèle de prédiction du churn (IBM Telco), API FastAPI, Docker, CI/CD GitHub Actions, déploiement sur Railway | AUC 0.840 |
-| **[House Price Prediction](https://github.com/Ikram-Saidane/house-price-prediction)** | Compétition Kaggle Ames Housing : feature engineering, XGBoost, LightGBM, CatBoost et stacking | **58e sur 5235 équipes** |
-
-Autres projets : prédiction d'annulations hôtelières (SMOTE, SHAP/LIME, AUC 0.915), prévision du flux touristique en Tunisie (Random Forest, MLP, LSTM), PRIMIA (hackathon EY).
-
-## 💼 Expérience
-
-- **Capgemini Engineering**, stage PFE GenAI / RAG (2025) : pipeline RAG de bout en bout (LangChain, MiniLM, LLaMA 3.1), évaluation avec RAGAS, démo Streamlit. Stage validé avec mention Très Bien.
-- **Dreamtek Consulting**, développement web (2023-2024) : module de gestion des congés et des rôles (Symfony, MySQL).
-
-## 🌍 Langues
-
-Arabe (natif) · Français (courant) · Anglais (courant) · Allemand (débutant)
-
-## 📫 Me contacter
-
-- 💼 [LinkedIn](https://linkedin.com/in/ikram-saidane)
-- ✉️ ikram.saidane@dauphine.eu
-- 📍 Tunis, disponible pour la France
+</div>
 
 ---
 
-⭐ Un projet t'a plu ? N'hésite pas à lui laisser une étoile !
+## 👩‍💻 About me
+
+```python
+class IkramSaidane:
+    role     = "Future AI Engineer"
+    studying = "M2 AI, Data Science & Agentic AI @ Paris Dauphine"
+    focus    = ["GenAI", "RAG", "Multi-agent systems", "MLOps"]
+    speaks   = ["Arabic 🇹🇳", "French 🇫🇷", "English 🇬🇧", "German (A1) 🇩🇪"]
+    seeking  = "6-month PFE internship · from Feb 2027 · France"
+
+    def currently_building(self):
+        return "Agora: EU regulatory watch powered by AI agents 🇪🇺"
+
+    def motto(self):
+        return "Reliable AI is evaluated, deployed, and explainable."
+```
+
+---
+
+## 🚀 Featured project: Agora
+
+**Multi-agent EU regulatory watch** on the EUR-Lex corpus (AI Act, GDPR, DSA, DMA).
+
+```mermaid
+flowchart LR
+    U([👤 User question]) --> Q[🧭 Query Agent]
+    Q --> R[🔎 Retrieval Agent]
+    R --> A[🧠 Analysis Agent]
+    A --> C[📚 Citation Agent]
+    C --> O([✅ Sourced answer])
+    R -.-> V[(Qdrant<br/>bge-m3)]
+    A -.-> L{{LLaMA 3.3 70B<br/>via Groq}}
+    style U fill:#1E3A5F,color:#fff
+    style O fill:#2DD4BF,color:#0F172A
+```
+
+| Faithfulness | Answer relevancy | Context precision | Context recall |
+|:---:|:---:|:---:|:---:|
+| ![](https://img.shields.io/badge/0.75-1E3A5F?style=for-the-badge) | ![](https://img.shields.io/badge/0.71-1E3A5F?style=for-the-badge) | ![](https://img.shields.io/badge/0.74-1E3A5F?style=for-the-badge) | ![](https://img.shields.io/badge/0.93-2DD4BF?style=for-the-badge) |
+
+`LangGraph` · `RAG` · `Qdrant` · `bge-m3` · `LLaMA 3.3` · `Groq` · `RAGAS`
+
+[![View repo](https://img.shields.io/badge/View%20Agora%20→-2DD4BF?style=for-the-badge&logo=github&logoColor=0F172A)](https://github.com/Ikram-Saidane/agora)
+
+---
+
+## 📂 More projects
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 📉 Churn Prediction API
+End-to-end **MLOps** pipeline on IBM Telco (7,043 customers).
+
+🎯 **AUC 0.840**
+🛠️ FastAPI · Docker · GitHub Actions · Railway
+
+[→ Explore](https://github.com/Ikram-Saidane/churn-prediction-api)
+
+</td>
+<td width="50%" valign="top">
+
+### 🏠 House Price Prediction
+Kaggle **Ames Housing** competition.
+
+🏆 **Top 58 out of 5,235 teams**
+🛠️ XGBoost · LightGBM · CatBoost · Stacking
+
+[→ Explore](https://github.com/Ikram-Saidane/house-price-prediction)
+
+</td>
+</tr>
+</table>
+
+<details>
+<summary><b>➕ Even more projects</b></summary>
+<br/>
+
+- 🏨 **Hotel cancellation prediction**: SMOTE, SHAP/LIME, AUC 0.915
+- 🌴 **Tourism flow forecasting in Tunisia**: Random Forest, MLP, LSTM
+- 🏁 **PRIMIA**: EY hackathon
+
+</details>
+
+---
+
+## 🛠️ Tech stack
+
+<div align="center">
+
+[![Skills](https://skillicons.dev/icons?i=py,sklearn,fastapi,docker,githubactions,gcp,git,linux,mysql,symfony&perline=10)](https://skillicons.dev)
+
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-1E3A5F?style=for-the-badge)
+![HuggingFace](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
+![Qdrant](https://img.shields.io/badge/Qdrant-DC244C?style=for-the-badge)
+![Groq](https://img.shields.io/badge/Groq-F55036?style=for-the-badge)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+
+</div>
+
+| 🤖 GenAI & Agentic AI | 📊 Machine Learning | ⚙️ MLOps & Tools |
+|---|---|---|
+| RAG, LLaMA 3.x | scikit-learn, XGBoost | FastAPI, Docker |
+| LangChain, LangGraph | LightGBM, CatBoost | GitHub Actions (CI/CD) |
+| Embeddings (bge-m3, MiniLM) | Stacking, feature engineering | Railway, GCP |
+| Qdrant, Groq API | Deep Learning (MLP, LSTM), NLP | Streamlit, Git, Linux |
+| RAGAS evaluation | SHAP / LIME | SQL |
+
+---
+
+## 💼 Journey
+
+```
+2025 ─ now     🎓 M2 AI, Data Science & Agentic AI · Paris Dauphine
+2025           🏢 Capgemini Engineering · GenAI/RAG PFE internship (Très Bien)
+2023 ─ 2024    💻 Dreamtek Consulting · Web development (Symfony)
+2021 ─ 2025    🎓 BSc Software Engineering · ISTIC
+```
+
+- **Capgemini Engineering**: end-to-end RAG pipeline (ingestion, chunking, MiniLM, LLaMA 3.1, LangChain), automated RAGAS evaluation, Streamlit demo.
+- **DataIn**: IT & training lead, co-organizer of the **DauphineXey** hackathon.
+
+---
+
+## 📊 GitHub activity
+
+<div align="center">
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=Ikram-Saidane&show_icons=true&hide_border=true&bg_color=0D1117&title_color=2DD4BF&icon_color=7C3AED&text_color=C9D1D9" alt="Stats" />
+<img height="170" src="https://streak-stats.demolab.com?user=Ikram-Saidane&theme=dark&hide_border=true&background=0D1117&ring=2DD4BF&fire=7C3AED&currStreakLabel=2DD4BF" alt="Streak" />
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ikram-Saidane&layout=compact&hide_border=true&bg_color=0D1117&title_color=2DD4BF&text_color=C9D1D9" alt="Top languages" />
+
+<br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Ikram-Saidane&bg_color=0D1117&color=2DD4BF&line=7C3AED&point_color=FFFFFF&area=true&hide_border=true" width="100%" alt="Activity graph" />
+
+<br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Ikram-Saidane/Ikram-Saidane/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ikram-Saidane/Ikram-Saidane/output/github-snake.svg" />
+  <img alt="Contribution snake" src="https://raw.githubusercontent.com/Ikram-Saidane/Ikram-Saidane/output/github-snake.svg" />
+</picture>
+
+</div>
+
+---
+
+<div align="center">
+
+### 📫 Let's work together
+
+I'm looking for a **6-month PFE internship in France** (AI Engineering, GenAI, ML, Data Science).
+
+[![Contact me](https://img.shields.io/badge/✉️%20Contact%20me-2DD4BF?style=for-the-badge)](mailto:ikram.saidane@dauphine.eu)
+[![LinkedIn](https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ikram-saidane)
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:1E3A5F,100:2DD4BF&height=140&section=footer" width="100%" alt="footer" />
+
+</div>
