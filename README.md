@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=venom&color=0:0F172A,50:1E3A5F,100:2DD4BF&height=260&section=header&text=Ikram%20Saidane&fontSize=62&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=GenAI%20%C2%B7%20Agentic%20AI%20%C2%B7%20Machine%20Learning&descSize=20&descAlignY=62" width="100%" alt="header" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&duration=3000&pause=900&color=2DD4BF&center=true&vCenter=true&width=760&height=55&lines=Hi+there!+I'm+Ikram+%F0%9F%91%8B;I+build+RAG+%26+multi-agent+systems+%F0%9F%A4%96;I+ship+ML+models+to+production+%F0%9F%9A%80;M2+AI+%40+Universit%C3%A9+Paris+Dauphine+%F0%9F%8E%93;Looking+for+a+6-month+PFE+internship+in+France+%F0%9F%87%AB%F0%9F%87%B7" alt="Typing animation" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&duration=3000&pause=900&color=2DD4BF&center=true&vCenter=true&width=760&height=55&lines=Hi+there%2C+I'm+Ikram;I+build+RAG+%26+multi-agent+systems;I+ship+ML+models+to+production;M2+AI+%40+Universit%C3%A9+Paris+Dauphine;Looking+for+a+6-month+PFE+internship+in+France" alt="Typing animation" />
 
 <br/><br/>
 
@@ -17,18 +17,18 @@
 
 ---
 
-## 👩‍💻 About me
+## About me
 
 ```python
 class IkramSaidane:
     role     = "Future AI Engineer"
     studying = "M2 AI, Data Science & Agentic AI @ Paris Dauphine"
     focus    = ["GenAI", "RAG", "Multi-agent systems", "MLOps"]
-    speaks   = ["Arabic 🇹🇳", "French 🇫🇷", "English 🇬🇧", "German (A1) 🇩🇪"]
+    speaks   = ["Arabic", "French", "English", "German (A1)"]
     seeking  = "6-month PFE internship · from Feb 2027 · France"
 
     def currently_building(self):
-        return "Agora: EU regulatory watch powered by AI agents 🇪🇺"
+        return "Agora: EU regulatory watch powered by AI agents"
 
     def motto(self):
         return "Reliable AI is evaluated, deployed, and explainable."
@@ -36,17 +36,17 @@ class IkramSaidane:
 
 ---
 
-## 🚀 Featured project: Agora
+## Featured project: Agora
 
 **Multi-agent EU regulatory watch** on the EUR-Lex corpus (AI Act, GDPR, DSA, DMA).
 
 ```mermaid
 flowchart LR
-    U([👤 User question]) --> Q[🧭 Query Agent]
-    Q --> R[🔎 Retrieval Agent]
-    R --> A[🧠 Analysis Agent]
-    A --> C[📚 Citation Agent]
-    C --> O([✅ Sourced answer])
+    U([User question]) --> Q[Query Agent]
+    Q --> R[Retrieval Agent]
+    R --> A[Analysis Agent]
+    A --> C[Citation Agent]
+    C --> O([Sourced answer])
     R -.-> V[(Qdrant<br/>bge-m3)]
     A -.-> L{{LLaMA 3.3 70B<br/>via Groq}}
     style U fill:#1E3A5F,color:#fff
@@ -59,52 +59,52 @@ flowchart LR
 
 `LangGraph` · `RAG` · `Qdrant` · `bge-m3` · `LLaMA 3.3` · `Groq` · `RAGAS`
 
-[![View repo](https://img.shields.io/badge/View%20Agora%20→-2DD4BF?style=for-the-badge&logo=github&logoColor=0F172A)](https://github.com/Ikram-Saidane/agora)
+[![View repo](https://img.shields.io/badge/View%20Agora-2DD4BF?style=for-the-badge&logo=github&logoColor=0F172A)](https://github.com/Ikram-Saidane/agora)
 
 ---
 
-## 📂 More projects
+## More projects
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### 📉 Churn Prediction API
+### Churn Prediction API
 End-to-end **MLOps** pipeline on IBM Telco (7,043 customers).
 
-🎯 **AUC 0.840**
-🛠️ FastAPI · Docker · GitHub Actions · Railway
+**AUC 0.840**
+FastAPI · Docker · GitHub Actions · Railway
 
-[→ Explore](https://github.com/Ikram-Saidane/churn-prediction-api)
+[Explore](https://github.com/Ikram-Saidane/churn-prediction-api)
 
 </td>
 <td width="50%" valign="top">
 
-### 🏠 House Price Prediction
+### House Price Prediction
 Kaggle **Ames Housing** competition.
 
-🏆 **Top 58 out of 5,235 teams**
-🛠️ XGBoost · LightGBM · CatBoost · Stacking
+**Rank 58 out of 5,235 teams**
+XGBoost · LightGBM · CatBoost · Stacking
 
-[→ Explore](https://github.com/Ikram-Saidane/house-price-prediction)
+[Explore](https://github.com/Ikram-Saidane/house-price-prediction)
 
 </td>
 </tr>
 </table>
 
 <details>
-<summary><b>➕ Even more projects</b></summary>
+<summary><b>Even more projects</b></summary>
 <br/>
 
-- 🏨 **Hotel cancellation prediction**: SMOTE, SHAP/LIME, AUC 0.915
-- 🌴 **Tourism flow forecasting in Tunisia**: Random Forest, MLP, LSTM
-- 🏁 **PRIMIA**: EY hackathon
+- **Hotel cancellation prediction**: SMOTE, SHAP/LIME, AUC 0.915
+- **Tourism flow forecasting in Tunisia**: Random Forest, MLP, LSTM
+- **PRIMIA**: EY hackathon
 
 </details>
 
 ---
 
-## 🛠️ Tech stack
+## Tech stack
 
 <div align="center">
 
@@ -119,7 +119,7 @@ Kaggle **Ames Housing** competition.
 
 </div>
 
-| 🤖 GenAI & Agentic AI | 📊 Machine Learning | ⚙️ MLOps & Tools |
+| GenAI & Agentic AI | Machine Learning | MLOps & Tools |
 |---|---|---|
 | RAG, LLaMA 3.x | scikit-learn, XGBoost | FastAPI, Docker |
 | LangChain, LangGraph | LightGBM, CatBoost | GitHub Actions (CI/CD) |
@@ -129,13 +129,13 @@ Kaggle **Ames Housing** competition.
 
 ---
 
-## 💼 Journey
+## Journey
 
 ```
-2025 ─ now     🎓 M2 AI, Data Science & Agentic AI · Paris Dauphine
-2025           🏢 Capgemini Engineering · GenAI/RAG PFE internship (Très Bien)
-2023 ─ 2024    💻 Dreamtek Consulting · Web development (Symfony)
-2021 ─ 2025    🎓 BSc Software Engineering · ISTIC
+2025 - now     M2 AI, Data Science & Agentic AI · Paris Dauphine
+2025           Capgemini Engineering · GenAI/RAG PFE internship (Très Bien)
+2023 - 2024    Dreamtek Consulting · Web development (Symfony)
+2021 - 2025    BSc Software Engineering · ISTIC
 ```
 
 - **Capgemini Engineering**: end-to-end RAG pipeline (ingestion, chunking, MiniLM, LLaMA 3.1, LangChain), automated RAGAS evaluation, Streamlit demo.
@@ -143,7 +143,7 @@ Kaggle **Ames Housing** competition.
 
 ---
 
-## 📊 GitHub activity
+## GitHub activity
 
 <div align="center">
 
@@ -169,11 +169,11 @@ Kaggle **Ames Housing** competition.
 
 <div align="center">
 
-### 📫 Let's work together
+### Let's work together
 
 I'm looking for a **6-month PFE internship in France** (AI Engineering, GenAI, ML, Data Science).
 
-[![Contact me](https://img.shields.io/badge/✉️%20Contact%20me-2DD4BF?style=for-the-badge)](mailto:ikram.saidane@dauphine.eu)
+[![Contact me](https://img.shields.io/badge/Contact%20me-2DD4BF?style=for-the-badge)](mailto:ikram.saidane@dauphine.eu)
 [![LinkedIn](https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ikram-saidane)
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:1E3A5F,100:2DD4BF&height=140&section=footer" width="100%" alt="footer" />
