@@ -1,4 +1,4 @@
-name: Generate snake animation
+name: Generate snake animation and contribution graph
 
 on:
   schedule:
@@ -23,6 +23,102 @@ jobs:
           outputs: |
             dist/github-snake.svg?color_snake=#D2042D&color_dots=#F3E3E6,#FFB3C1,#FF6F8E,#D2042D,#6C1026
             dist/github-snake-dark.svg?palette=github-dark&color_snake=#FF8FA6&color_dots=#161B22,#4A0816,#6C1026,#D2042D,#FF8FA6
+
+      - name: Draw the contribution graph (last 60 days)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          """Draw a cherry/burgundy contribution graph (last 60 days) as an SVG.
+
+          Runs inside GitHub Actions: reads GITHUB_TOKEN and GITHUB_REPOSITORY_OWNER,
+          asks the GitHub GraphQL API for the contribution calendar, writes dist/contrib-graph.svg.
+          """
+          import datetime as dt
+          import json
+          import os
+          import urllib.request
+
+          DAYS = 60
+          W, H = 1200, 320
+          L, R, T, B = 60, 30, 70, 50  # chart margins
+
+
+          def fetch(login, token):
+              query = """query($login:String!){ user(login:$login){ contributionsCollection{
+                contributionCalendar{ weeks{ contributionDays{ date contributionCount } } } } } }"""
+              req = urllib.request.Request(
+                  "https://api.github.com/graphql",
+                  data=json.dumps({"query": query, "variables": {"login": login}}).encode(),
+                  headers={"Authorization": f"bearer {token}", "Content-Type": "application/json"},
+              )
+              with urllib.request.urlopen(req, timeout=30) as r:
+                  data = json.load(r)
+              weeks = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
+              days = [(d["date"], d["contributionCount"]) for w in weeks for d in w["contributionDays"]]
+              return days[-DAYS:]
+
+
+          def nice_max(v):
+              for step in (4, 8, 12, 20, 40, 60, 100, 200, 400):
+                  if v <= step:
+                      return step
+              return v
+
+
+          def draw(days):
+              counts = [c for _, c in days]
+              top = nice_max(max(counts + [1]))
+              cw, ch = W - L - R, H - T - B
+              x = lambda i: L + cw * i / (len(days) - 1)
+              y = lambda c: T + ch - ch * c / top
+              pts = " ".join(f"{x(i):.1f},{y(c):.1f}" for i, c in enumerate(counts))
+              area = f"M{L},{T + ch} L" + pts.replace(" ", " L") + f" L{L + cw},{T + ch} Z"
+
+              grid = ""
+              for k in range(5):
+                  v = top * k / 4
+                  gy = y(v)
+                  grid += f'<line x1="{L}" x2="{L + cw}" y1="{gy:.1f}" y2="{gy:.1f}" stroke="#ffd6de" stroke-opacity=".14"/>'
+                  grid += f'<text x="{L - 12}" y="{gy + 4:.1f}" text-anchor="end" class="ax">{v:g}</text>'
+              for i in range(0, len(days), 7):
+                  d = dt.date.fromisoformat(days[i][0])
+                  grid += f'<text x="{x(i):.1f}" y="{H - 20}" text-anchor="middle" class="ax">{d.day:02d}/{d.month:02d}</text>'
+
+              dots = "".join(
+                  f'<circle cx="{x(i):.1f}" cy="{y(c):.1f}" r="3.2" fill="#fff3f5"/>' for i, c in enumerate(counts) if c
+              )
+              total = sum(counts)
+              best = max(counts)
+              return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="{total} contributions in the last {DAYS} days">
+          <style>
+          .t {{ font: 700 22px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #ffffff; }}
+          .s {{ font: 600 15px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #ffd6de; }}
+          .ax {{ font: 12px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #ffd6de; fill-opacity: .8; }}
+          .line {{ stroke-dasharray: 4000; stroke-dashoffset: 4000; animation: draw 2.2s ease-out forwards; }}
+          .fill {{ opacity: 0; animation: fade 1s ease-out 1.2s forwards; }}
+          @keyframes draw {{ to {{ stroke-dashoffset: 0; }} }}
+          @keyframes fade {{ to {{ opacity: 1; }} }}
+          @media (prefers-reduced-motion: reduce) {{ .line, .fill {{ animation: none; stroke-dashoffset: 0; opacity: 1; }} }}
+          </style>
+          <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8fa6" stop-opacity=".55"/><stop offset="1" stop-color="#d2042d" stop-opacity="0"/></linearGradient></defs>
+          <rect width="{W}" height="{H}" rx="14" fill="#6c1026"/>
+          <text x="{L}" y="40" class="t">🍒 Contributions · last {DAYS} days</text>
+          <text x="{W - R}" y="40" text-anchor="end" class="s">{total} total · best day {best}</text>
+          {grid}
+          <path class="fill" d="{area}" fill="url(#g)"/>
+          <polyline class="line" points="{pts}" fill="none" stroke="#ff8fa6" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+          <g class="fill">{dots}</g>
+          </svg>'''
+
+
+          if __name__ == "__main__":
+              days = fetch(os.environ["GITHUB_REPOSITORY_OWNER"], os.environ["GITHUB_TOKEN"])
+              os.makedirs("dist", exist_ok=True)
+              with open("dist/contrib-graph.svg", "w", encoding="utf-8") as f:
+                  f.write(draw(days))
+              print(f"wrote dist/contrib-graph.svg ({sum(c for _, c in days)} contributions)")
+          PY
 
       - name: Publish the images to the "output" branch
         uses: crazy-max/ghaction-github-pages@v4
