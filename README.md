@@ -131,7 +131,7 @@ flowchart LR
   <img src="https://streak-stats.demolab.com?user=Ikram-Saidane&hide_border=true&border_radius=14&background=6C1026&ring=FF8FA6&fire=FF8FA6&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=FFE1E7&sideLabels=FFE1E7&dates=FFD6DE&stroke=8A1530" alt="Contribution streak">
 </p>
 <p align="center">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Ikram-Saidane&hide_border=true&radius=14&bg_color=6C1026&color=FFE1E7&line=FF8FA6&point=FFFFFF&area=true&area_color=D2042D&title_color=FFFFFF" alt="Contribution graph">
+  <img width="100%" src="https://raw.githubusercontent.com/Ikram-Saidane/Ikram-Saidane/output/contrib-graph.svg" alt="Contribution graph">
 </p>
 
 <p align="center">
